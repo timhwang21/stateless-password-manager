@@ -1,2 +1,4 @@
-export * from './lib/async';
-export * from './lib/number';
+export { authenticate } from './authenticate'
+export { getKeys } from './getKeys'
+export { getServicePassword } from './getServicePassword'
+export { getServicePasswordSeed } from './getServicePasswordSeed'
