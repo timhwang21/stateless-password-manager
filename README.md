@@ -1,5 +1,7 @@
 # (Mostly) Stateless Password Manager
 
+[![asciinema](https://asciinema.org/a/YslG0ROqA6fo9u19pZ5CZRfVv.svg)](https://asciinema.org/a/YslG0ROqA6fo9u19pZ5CZRfVv)
+
 POC implementation of an stateless KDF-based password manager.
 
 Traditional password managers allow users to generate unique passwords for services. Access to the password manager is controlled by a single master password.
