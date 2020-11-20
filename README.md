@@ -18,8 +18,8 @@ Note that the server aspect is needed. A serverless approach has critical downsi
 
 ## Implementation
 
-1. User provides a password of sufficient entropy.
-2. A authentication key and hash key is generated from the password via key derivation (Scrypt, PBKDF2, HKDF).
+1. User registers with a username and password.
+2. A authentication key and hash key is generated from the password via key derivation. [scrypt](https://en.wikipedia.org/wiki/Scrypt) is used over alternatives like [HKDF](https://en.wikipedia.org/wiki/HKDF) because the input key material (password) is likely to have low entropy. See [Section 3.3](https://tools.ietf.org/html/rfc5869) for reference.
 3. The authentication key (and username) are used to register on the server. The server generates a random byte buffer.
 4. On authentication, the byte buffer is sent to the client.
 5. The byte buffer is hashed, and the resulting payload is combined with a plaintext service name string to generate passwords deterministically.
