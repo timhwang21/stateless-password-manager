@@ -1,4 +1,5 @@
 export { authenticate } from './authenticate'
+export { generateEntropy } from './generateEntropy'
 export { getKeys } from './getKeys'
 export { getServicePassword } from './getServicePassword'
 export { getServicePasswordSeed } from './getServicePasswordSeed'

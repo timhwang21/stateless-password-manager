@@ -1,4 +1,4 @@
-import { deriveKey } from './deriveKey'
+import { deriveKey } from './utils/deriveKey'
 
 interface Keys {
   authKey: string

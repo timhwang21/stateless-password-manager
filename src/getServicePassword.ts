@@ -1,4 +1,4 @@
-import { deriveKey } from './deriveKey'
+import { deriveKey } from './utils/deriveKey'
 
 /**
  * Takes the hashed password derivation seed and a service name and returns a
